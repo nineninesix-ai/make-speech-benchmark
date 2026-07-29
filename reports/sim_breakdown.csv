@@ -1,0 +1,163 @@
+lang,encoder,cut,value,SIM,95% CI,n,speakers,small cell
+en-US,wavlm_sv,prompt duration,3.7-4.5,0.9284,"[0.9225, 0.9338]",301,204,False
+en-US,wavlm_sv,prompt duration,<3.7,0.9228,"[0.9137, 0.9308]",149,112,False
+en-US,wavlm_sv,prompt duration,>=4.5,0.9367,"[0.9322, 0.9406]",459,315,False
+en-US,wavlm_sv,second-clip duration,3.5-4.5,0.948,"[0.9435, 0.9526]",166,133,False
+en-US,wavlm_sv,second-clip duration,<3.5,0.9268,"[0.9227, 0.9306]",686,449,False
+en-US,wavlm_sv,second-clip duration,>=4.5,0.9432,"[0.9316, 0.9533]",57,49,False
+en-US,wavlm_sv,gender,female,0.9301,"[0.9257, 0.9341]",556,278,False
+en-US,wavlm_sv,gender,male,0.9317,"[0.9255, 0.9378]",197,197,False
+en-US,wavlm_sv,gender,unknown,0.9372,"[0.9301, 0.9436]",156,156,False
+en-US,wavlm_ft,prompt duration,3.7-4.5,0.6414,"[0.6263, 0.6556]",301,204,False
+en-US,wavlm_ft,prompt duration,<3.7,0.6265,"[0.6069, 0.6458]",149,112,False
+en-US,wavlm_ft,prompt duration,>=4.5,0.6672,"[0.6532, 0.6797]",459,315,False
+en-US,wavlm_ft,second-clip duration,3.5-4.5,0.698,"[0.6805, 0.7141]",166,133,False
+en-US,wavlm_ft,second-clip duration,<3.5,0.6368,"[0.6267, 0.6471]",686,449,False
+en-US,wavlm_ft,second-clip duration,>=4.5,0.701,"[0.6640, 0.7347]",57,49,False
+en-US,wavlm_ft,gender,female,0.6352,"[0.6221, 0.6478]",556,278,False
+en-US,wavlm_ft,gender,male,0.6623,"[0.6463, 0.6771]",197,197,False
+en-US,wavlm_ft,gender,unknown,0.699,"[0.6822, 0.7148]",156,156,False
+en-US,ecapa,prompt duration,3.7-4.5,0.6003,"[0.5841, 0.6158]",301,204,False
+en-US,ecapa,prompt duration,<3.7,0.5754,"[0.5551, 0.5958]",149,112,False
+en-US,ecapa,prompt duration,>=4.5,0.6358,"[0.6218, 0.6487]",459,315,False
+en-US,ecapa,second-clip duration,3.5-4.5,0.6632,"[0.6457, 0.6804]",166,133,False
+en-US,ecapa,second-clip duration,<3.5,0.5985,"[0.5879, 0.6089]",686,449,False
+en-US,ecapa,second-clip duration,>=4.5,0.66,"[0.6189, 0.6975]",57,49,False
+en-US,ecapa,gender,female,0.6026,"[0.5886, 0.6155]",556,278,False
+en-US,ecapa,gender,male,0.6145,"[0.5978, 0.6306]",197,197,False
+en-US,ecapa,gender,unknown,0.655,"[0.6366, 0.6726]",156,156,False
+es-ES,wavlm_sv,prompt duration,3.7-4.5,0.9476,"[0.9438, 0.9511]",492,240,False
+es-ES,wavlm_sv,prompt duration,<3.7,0.9321,"[0.9169, 0.9435]",263,130,False
+es-ES,wavlm_sv,prompt duration,>=4.5,0.9456,"[0.9409, 0.9501]",467,220,False
+es-ES,wavlm_sv,second-clip duration,3.5-4.5,0.9528,"[0.9466, 0.9588]",175,78,False
+es-ES,wavlm_sv,second-clip duration,<3.5,0.9413,"[0.9363, 0.9454]",1005,494,False
+es-ES,wavlm_sv,second-clip duration,>=4.5,0.9572,"[0.9518, 0.9628]",42,18,True
+es-ES,wavlm_sv,gender,female,0.9424,"[0.9347, 0.9488]",507,169,False
+es-ES,wavlm_sv,gender,male,0.9444,"[0.9405, 0.9478]",652,384,False
+es-ES,wavlm_sv,gender,unknown,0.9426,"[0.9332, 0.9519]",63,37,False
+es-ES,wavlm_ft,prompt duration,3.7-4.5,0.6981,"[0.6860, 0.7096]",492,240,False
+es-ES,wavlm_ft,prompt duration,<3.7,0.6411,"[0.6159, 0.6637]",263,130,False
+es-ES,wavlm_ft,prompt duration,>=4.5,0.7059,"[0.6911, 0.7200]",467,220,False
+es-ES,wavlm_ft,second-clip duration,3.5-4.5,0.7383,"[0.7186, 0.7568]",175,78,False
+es-ES,wavlm_ft,second-clip duration,<3.5,0.6777,"[0.6667, 0.6882]",1005,494,False
+es-ES,wavlm_ft,second-clip duration,>=4.5,0.747,"[0.7133, 0.7790]",42,18,True
+es-ES,wavlm_ft,gender,female,0.6924,"[0.6749, 0.7083]",507,169,False
+es-ES,wavlm_ft,gender,male,0.6865,"[0.6756, 0.6967]",652,384,False
+es-ES,wavlm_ft,gender,unknown,0.6833,"[0.6562, 0.7075]",63,37,False
+es-ES,ecapa,prompt duration,3.7-4.5,0.6615,"[0.6488, 0.6733]",492,240,False
+es-ES,ecapa,prompt duration,<3.7,0.6014,"[0.5746, 0.6270]",263,130,False
+es-ES,ecapa,prompt duration,>=4.5,0.6667,"[0.6510, 0.6818]",467,220,False
+es-ES,ecapa,second-clip duration,3.5-4.5,0.7017,"[0.6805, 0.7219]",175,78,False
+es-ES,ecapa,second-clip duration,<3.5,0.6393,"[0.6278, 0.6501]",1005,494,False
+es-ES,ecapa,second-clip duration,>=4.5,0.7062,"[0.6677, 0.7408]",42,18,True
+es-ES,ecapa,gender,female,0.6518,"[0.6329, 0.6697]",507,169,False
+es-ES,ecapa,gender,male,0.6503,"[0.6388, 0.6610]",652,384,False
+es-ES,ecapa,gender,unknown,0.6433,"[0.6132, 0.6722]",63,37,False
+es-MX,wavlm_sv,prompt duration,3.7-4.5,0.9455,"[0.9418, 0.9490]",425,279,False
+es-MX,wavlm_sv,prompt duration,<3.7,0.9377,"[0.9304, 0.9447]",234,160,False
+es-MX,wavlm_sv,prompt duration,>=4.5,0.9492,"[0.9460, 0.9524]",542,332,False
+es-MX,wavlm_sv,second-clip duration,3.5-4.5,0.9519,"[0.9468, 0.9568]",248,149,False
+es-MX,wavlm_sv,second-clip duration,<3.5,0.9432,"[0.9404, 0.9459]",897,590,False
+es-MX,wavlm_sv,second-clip duration,>=4.5,0.9574,"[0.9474, 0.9654]",56,32,False
+es-MX,wavlm_sv,gender,female,0.9411,"[0.9374, 0.9446]",492,246,False
+es-MX,wavlm_sv,gender,male,0.9478,"[0.9445, 0.9507]",648,488,False
+es-MX,wavlm_sv,gender,unknown,0.9592,"[0.9519, 0.9658]",61,37,False
+es-MX,wavlm_ft,prompt duration,3.7-4.5,0.6835,"[0.6715, 0.6959]",425,279,False
+es-MX,wavlm_ft,prompt duration,<3.7,0.6569,"[0.6381, 0.6740]",234,160,False
+es-MX,wavlm_ft,prompt duration,>=4.5,0.7054,"[0.6958, 0.7156]",542,332,False
+es-MX,wavlm_ft,second-clip duration,3.5-4.5,0.7173,"[0.7001, 0.7331]",248,149,False
+es-MX,wavlm_ft,second-clip duration,<3.5,0.6774,"[0.6699, 0.6856]",897,590,False
+es-MX,wavlm_ft,second-clip duration,>=4.5,0.7319,"[0.7032, 0.7599]",56,32,False
+es-MX,wavlm_ft,gender,female,0.6759,"[0.6640, 0.6878]",492,246,False
+es-MX,wavlm_ft,gender,male,0.6944,"[0.6857, 0.7030]",648,488,False
+es-MX,wavlm_ft,gender,unknown,0.7218,"[0.6966, 0.7449]",61,37,False
+es-MX,ecapa,prompt duration,3.7-4.5,0.632,"[0.6183, 0.6458]",425,279,False
+es-MX,ecapa,prompt duration,<3.7,0.5996,"[0.5812, 0.6170]",234,160,False
+es-MX,ecapa,prompt duration,>=4.5,0.6528,"[0.6404, 0.6649]",542,332,False
+es-MX,ecapa,second-clip duration,3.5-4.5,0.6665,"[0.6475, 0.6848]",248,149,False
+es-MX,ecapa,second-clip duration,<3.5,0.6218,"[0.6125, 0.6314]",897,590,False
+es-MX,ecapa,second-clip duration,>=4.5,0.7084,"[0.6751, 0.7353]",56,32,False
+es-MX,ecapa,gender,female,0.6237,"[0.6096, 0.6375]",492,246,False
+es-MX,ecapa,gender,male,0.6401,"[0.6309, 0.6497]",648,488,False
+es-MX,ecapa,gender,unknown,0.6723,"[0.6417, 0.7005]",61,37,False
+nl-NL,wavlm_sv,prompt duration,3.7-4.5,0.9309,"[0.9232, 0.9376]",384,119,False
+nl-NL,wavlm_sv,prompt duration,<3.7,0.925,"[0.9171, 0.9316]",727,227,False
+nl-NL,wavlm_sv,prompt duration,>=4.5,0.9367,"[0.9274, 0.9449]",208,66,False
+nl-NL,wavlm_sv,second-clip duration,3.5-4.5,0.9431,"[0.9263, 0.9563]",70,22,True
+nl-NL,wavlm_sv,second-clip duration,<3.5,0.9279,"[0.9228, 0.9325]",1242,388,False
+nl-NL,wavlm_sv,second-clip duration,>=4.5,0.8895,"[0.8412, 0.9538]",7,2,True
+nl-NL,wavlm_sv,gender,female,0.9393,"[0.9302, 0.9477]",236,59,False
+nl-NL,wavlm_sv,gender,male,0.9271,"[0.9222, 0.9319]",888,289,False
+nl-NL,wavlm_sv,gender,unknown,0.9219,"[0.8989, 0.9385]",195,64,False
+nl-NL,wavlm_ft,prompt duration,3.7-4.5,0.6878,"[0.6714, 0.7045]",384,119,False
+nl-NL,wavlm_ft,prompt duration,<3.7,0.6513,"[0.6392, 0.6624]",727,227,False
+nl-NL,wavlm_ft,prompt duration,>=4.5,0.7078,"[0.6877, 0.7274]",208,66,False
+nl-NL,wavlm_ft,second-clip duration,3.5-4.5,0.718,"[0.6925, 0.7418]",70,22,True
+nl-NL,wavlm_ft,second-clip duration,<3.5,0.6681,"[0.6593, 0.6770]",1242,388,False
+nl-NL,wavlm_ft,second-clip duration,>=4.5,0.6734,"[0.6291, 0.7324]",7,2,True
+nl-NL,wavlm_ft,gender,female,0.6722,"[0.6556, 0.6880]",236,59,False
+nl-NL,wavlm_ft,gender,male,0.6709,"[0.6594, 0.6820]",888,289,False
+nl-NL,wavlm_ft,gender,unknown,0.669,"[0.6367, 0.6953]",195,64,False
+nl-NL,ecapa,prompt duration,3.7-4.5,0.6375,"[0.6193, 0.6554]",384,119,False
+nl-NL,ecapa,prompt duration,<3.7,0.6067,"[0.5931, 0.6197]",727,227,False
+nl-NL,ecapa,prompt duration,>=4.5,0.6545,"[0.6288, 0.6792]",208,66,False
+nl-NL,ecapa,second-clip duration,3.5-4.5,0.6803,"[0.6468, 0.7129]",70,22,True
+nl-NL,ecapa,second-clip duration,<3.5,0.6203,"[0.6099, 0.6301]",1242,388,False
+nl-NL,ecapa,second-clip duration,>=4.5,0.5781,"[0.4919, 0.6930]",7,2,True
+nl-NL,ecapa,gender,female,0.6319,"[0.6074, 0.6552]",236,59,False
+nl-NL,ecapa,gender,male,0.6202,"[0.6086, 0.6318]",888,289,False
+nl-NL,ecapa,gender,unknown,0.6266,"[0.5940, 0.6540]",195,64,False
+pt-BR,wavlm_sv,prompt duration,3.7-4.5,0.9491,"[0.9411, 0.9566]",220,36,False
+pt-BR,wavlm_sv,prompt duration,<3.7,0.9262,"[0.9143, 0.9360]",579,95,False
+pt-BR,wavlm_sv,prompt duration,>=4.5,0.9399,"[0.9300, 0.9493]",184,30,False
+pt-BR,wavlm_sv,second-clip duration,3.5-4.5,0.9451,"[0.9278, 0.9581]",80,13,True
+pt-BR,wavlm_sv,second-clip duration,<3.5,0.9327,"[0.9244, 0.9395]",861,141,False
+pt-BR,wavlm_sv,second-clip duration,>=4.5,0.9376,"[0.9166, 0.9589]",42,7,True
+pt-BR,wavlm_sv,gender,female,0.9447,"[0.9311, 0.9561]",125,18,True
+pt-BR,wavlm_sv,gender,male,0.9339,"[0.9252, 0.9415]",582,97,False
+pt-BR,wavlm_sv,gender,unknown,0.929,"[0.9111, 0.9420]",276,46,False
+pt-BR,wavlm_ft,prompt duration,3.7-4.5,0.6904,"[0.6666, 0.7151]",220,36,False
+pt-BR,wavlm_ft,prompt duration,<3.7,0.6055,"[0.5829, 0.6270]",579,95,False
+pt-BR,wavlm_ft,prompt duration,>=4.5,0.6595,"[0.6220, 0.6972]",184,30,False
+pt-BR,wavlm_ft,second-clip duration,3.5-4.5,0.6277,"[0.5625, 0.6882]",80,13,True
+pt-BR,wavlm_ft,second-clip duration,<3.5,0.6301,"[0.6133, 0.6471]",861,141,False
+pt-BR,wavlm_ft,second-clip duration,>=4.5,0.7393,"[0.6872, 0.7857]",42,7,True
+pt-BR,wavlm_ft,gender,female,0.6378,"[0.5943, 0.6800]",125,18,True
+pt-BR,wavlm_ft,gender,male,0.6294,"[0.6073, 0.6516]",582,97,False
+pt-BR,wavlm_ft,gender,unknown,0.6442,"[0.6135, 0.6737]",276,46,False
+pt-BR,ecapa,prompt duration,3.7-4.5,0.6325,"[0.6062, 0.6562]",220,36,False
+pt-BR,ecapa,prompt duration,<3.7,0.5509,"[0.5272, 0.5721]",579,95,False
+pt-BR,ecapa,prompt duration,>=4.5,0.5893,"[0.5441, 0.6362]",184,30,False
+pt-BR,ecapa,second-clip duration,3.5-4.5,0.6004,"[0.5357, 0.6629]",80,13,True
+pt-BR,ecapa,second-clip duration,<3.5,0.5701,"[0.5515, 0.5889]",861,141,False
+pt-BR,ecapa,second-clip duration,>=4.5,0.6576,"[0.5710, 0.7411]",42,7,True
+pt-BR,ecapa,gender,female,0.5912,"[0.5372, 0.6387]",125,18,True
+pt-BR,ecapa,gender,male,0.5815,"[0.5578, 0.6042]",582,97,False
+pt-BR,ecapa,gender,unknown,0.5587,"[0.5265, 0.5922]",276,46,False
+ky,wavlm_sv,prompt duration,3.7-4.5,0.9321,"[0.9237, 0.9401]",200,52,False
+ky,wavlm_sv,prompt duration,<3.7,0.9167,"[0.9010, 0.9296]",296,76,False
+ky,wavlm_sv,prompt duration,>=4.5,0.9138,"[0.8778, 0.9402]",103,27,True
+ky,wavlm_sv,second-clip duration,3.5-4.5,0.911,"[0.8429, 0.9509]",43,11,True
+ky,wavlm_sv,second-clip duration,<3.5,0.9223,"[0.9131, 0.9302]",540,140,False
+ky,wavlm_sv,second-clip duration,>=4.5,0.9174,"[0.8106, 0.9779]",16,4,True
+ky,wavlm_sv,gender,female,0.9124,"[0.8776, 0.9377]",108,27,True
+ky,wavlm_sv,gender,male,0.9213,"[0.9080, 0.9340]",230,62,False
+ky,wavlm_sv,gender,unknown,0.9251,"[0.9115, 0.9361]",261,66,False
+ky,wavlm_ft,prompt duration,3.7-4.5,0.6381,"[0.6138, 0.6620]",200,52,False
+ky,wavlm_ft,prompt duration,<3.7,0.5887,"[0.5557, 0.6165]",296,76,False
+ky,wavlm_ft,prompt duration,>=4.5,0.5985,"[0.5272, 0.6620]",103,27,True
+ky,wavlm_ft,second-clip duration,3.5-4.5,0.5928,"[0.4915, 0.6679]",43,11,True
+ky,wavlm_ft,second-clip duration,<3.5,0.6039,"[0.5833, 0.6244]",540,140,False
+ky,wavlm_ft,second-clip duration,>=4.5,0.745,"[0.7124, 0.7707]",16,4,True
+ky,wavlm_ft,gender,female,0.6212,"[0.5592, 0.6716]",108,27,True
+ky,wavlm_ft,gender,male,0.5986,"[0.5713, 0.6244]",230,62,False
+ky,wavlm_ft,gender,unknown,0.6083,"[0.5727, 0.6408]",261,66,False
+ky,ecapa,prompt duration,3.7-4.5,0.5979,"[0.5674, 0.6271]",200,52,False
+ky,ecapa,prompt duration,<3.7,0.5416,"[0.5106, 0.5701]",296,76,False
+ky,ecapa,prompt duration,>=4.5,0.5354,"[0.4691, 0.5938]",103,27,True
+ky,ecapa,second-clip duration,3.5-4.5,0.5691,"[0.4773, 0.6375]",43,11,True
+ky,ecapa,second-clip duration,<3.5,0.5564,"[0.5344, 0.5784]",540,140,False
+ky,ecapa,second-clip duration,>=4.5,0.6337,"[0.5814, 0.6743]",16,4,True
+ky,ecapa,gender,female,0.5622,"[0.5055, 0.6127]",108,27,True
+ky,ecapa,gender,male,0.5574,"[0.5311, 0.5836]",230,62,False
+ky,ecapa,gender,unknown,0.5598,"[0.5234, 0.5955]",261,66,False

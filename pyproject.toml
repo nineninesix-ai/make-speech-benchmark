@@ -1,0 +1,124 @@
+[project]
+name = "make-speech-benchmark"
+version = "2.0.0"
+description = "Build and evaluation pipeline for a multilingual zero-shot TTS benchmark derived from Common Voice"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "nineninesix" }]
+keywords = ["tts", "voice-cloning", "benchmark", "speech-synthesis", "common-voice"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+
+# Core: the measurement contract plus packaging. Anyone comparing a synthesis
+# run against the published anchors needs exactly this and nothing more —
+# `msbench.audio.prepare` and `msbench.normalize.normalize` are the two
+# functions that decide whether a number is comparable at all.
+dependencies = [
+    "numpy",
+    "pandas>=2.0",
+    "pyarrow",
+    "scipy",
+    "soundfile>=0.13",   # needs libsndfile >= 1.2 for mp3 decoding
+    "soxr",              # band-limited resampling; audio.py must never use np.interp
+    "silero-vad",
+    "torch>=2.10",
+    "torchaudio",
+    "jiwer",
+    "num2words",
+    "tabulate",          # pandas .to_markdown()
+    "PyYAML",            # dataset-card front matter
+    "huggingface_hub>=0.34",   # fetching the pack, and the wavlm_ft checkpoint
+    "datasets>=4.0",           # the Audio/Features schema the pack is written with
+]
+
+[project.optional-dependencies]
+# Local recognisers. A single ASR conflates a model's errors with its own
+# idiosyncrasies, and Whisper's internal LM repairs mispronounced synthesis;
+# MMS is CTC without a language model, which is why both are reported.
+asr = [
+    "transformers>=5.0",
+    "accelerate",
+]
+# Kyrgyz: ai-sage/GigaAM-Multilingual (trust_remote_code). Whisper covers the
+# other five subsets and needs nothing beyond the `asr` extra.
+ky = [
+    "make-speech-benchmark[asr]",
+    "sentencepiece",
+    "pyannote.audio",
+    "hydra-core",
+    "omegaconf",
+]
+# Speaker encoders. `s3prl` supplies the WavLM backbone that
+# `wavlm_large_finetune.pth` — the checkpoint the stock seed-tts-eval scripts
+# use — was trained with; `speechbrain` supplies ECAPA-TDNN, which is from
+# outside the WavLM family and is what breaks the QC circularity.
+sim = [
+    "s3prl",
+    "speechbrain",
+]
+# DNSMOS and the QC battery.
+quality = [
+    "onnxruntime",
+    "speechmos",
+]
+# Corpus acquisition and selection (S1-S3). Needs the espeak-ng system package.
+build = [
+    "phonemizer",
+]
+dev = [
+    "ruff",
+    "pytest",
+]
+all = [
+    "make-speech-benchmark[asr,ky,sim,quality,build,dev]",
+]
+
+[project.scripts]
+msbench-wer      = "msbench.cli.wer:main"
+msbench-sim      = "msbench.cli.sim:main"
+msbench-quality  = "msbench.cli.quality:main"
+msbench-report   = "msbench.cli.report:main"
+msbench-replay   = "msbench.cli.replay:main"
+msbench-fetch    = "msbench.cli.fetch:main"
+msbench-validate = "msbench.build.validate:main"
+msbench-card     = "msbench.build.card:main"
+msbench-publish  = "msbench.build.publish:main"
+
+[project.urls]
+Homepage = "https://github.com/nineninesix-ai/make-speech-benchmark"
+Dataset = "https://huggingface.co/datasets/nineninesix/multilingual-speech-benchmark"
+Issues = "https://github.com/nineninesix-ai/make-speech-benchmark/issues"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 90
+target-version = "py311"
+src = ["src", "tests"]
+# Vendored upstream code is kept byte-identical apart from the one documented
+# change in its header; linting it would invite edits that break that guarantee.
+extend-exclude = ["src/msbench/sim/_vendor"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = [
+    "E501",  # long lines occur in tables inside docstrings
+    # Every flagged closure here is built and consumed inside the same loop
+    # iteration (`.map(lambda ...)` on the row just computed), never deferred,
+    # so the late-binding the rule warns about cannot occur.
+    "B023",
+]

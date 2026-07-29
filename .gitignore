@@ -1,0 +1,49 @@
+# --- Data: never committed --------------------------------------------------
+# Everything below is either downloaded, or rebuilt by the pipeline. The
+# benchmark itself is distributed through the Hugging Face Hub, not through git.
+
+# Common Voice 17.0 (~64 GB of tar shards) and the tar offset index.
+# Rebuild: scripts/fetch_cv.sh + scripts/fetch_audio.py
+cv/
+
+# S1-S3 intermediates: candidate pools, QC results, selections.
+# Rebuild: msbench.build.pools / .prompts / .select
+work/
+
+# The assembled benchmark packages (~4 GB of audio each).
+# Rebuild: msbench.build.assemble (v1) and msbench.build.repack_v2 (v2).
+tts-bench-v1/
+tts-bench-v2/
+
+# Synthesis under evaluation, and run logs.
+out/
+logs/
+
+# Per-utterance metric artifacts. Small enough to keep, but they belong with the
+# dataset on the Hub (four `metrics-*` configs), not in two places at once.
+reports/per_utterance/
+
+# --- Secrets ----------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+/build/          # the sdist/wheel staging dir, NOT src/msbench/build/
+dist/
+venv/
+.venv/
+.uv/
+
+# --- Tooling ----------------------------------------------------------------
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+*.part
+*.log

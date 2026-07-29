@@ -1,0 +1,130 @@
+lang,ASR,cut,value,WER corpus,95% CI,n,speakers,small cell
+en-US,elevenlabs,target length,10-12,0.0457,"[0.0377, 0.0537]",450,377,False
+en-US,elevenlabs,target length,13-16,0.0465,"[0.0374, 0.0568]",345,306,False
+en-US,elevenlabs,target length,17+,0.0397,"[0.0171, 0.0668]",30,29,False
+en-US,elevenlabs,target length,3-5,0.0801,"[0.0560, 0.1051]",225,220,False
+en-US,elevenlabs,target length,6-9,0.0605,"[0.0503, 0.0711]",450,387,False
+en-US,elevenlabs,gender,female,0.0566,"[0.0487, 0.0649]",676,565,False
+en-US,elevenlabs,gender,male,0.0422,"[0.0340, 0.0514]",442,386,False
+en-US,elevenlabs,gender,unknown,0.0534,"[0.0428, 0.0659]",382,335,False
+en-US,whisper,target length,10-12,0.076,"[0.0655, 0.0868]",450,377,False
+en-US,whisper,target length,13-16,0.0697,"[0.0590, 0.0814]",345,306,False
+en-US,whisper,target length,17+,0.0466,"[0.0261, 0.0704]",30,29,False
+en-US,whisper,target length,3-5,0.0933,"[0.0690, 0.1185]",225,220,False
+en-US,whisper,target length,6-9,0.0903,"[0.0755, 0.1054]",450,387,False
+en-US,whisper,gender,female,0.0803,"[0.0714, 0.0901]",676,565,False
+en-US,whisper,gender,male,0.0712,"[0.0596, 0.0832]",442,386,False
+en-US,whisper,gender,unknown,0.0794,"[0.0670, 0.0927]",382,335,False
+en-US,mms,target length,10-12,0.1803,"[0.1635, 0.1970]",450,377,False
+en-US,mms,target length,13-16,0.1656,"[0.1513, 0.1802]",345,306,False
+en-US,mms,target length,17+,0.1121,"[0.0769, 0.1518]",30,29,False
+en-US,mms,target length,3-5,0.1897,"[0.1552, 0.2255]",225,220,False
+en-US,mms,target length,6-9,0.201,"[0.1805, 0.2210]",450,387,False
+en-US,mms,gender,female,0.1902,"[0.1746, 0.2052]",676,565,False
+en-US,mms,gender,male,0.1586,"[0.1439, 0.1749]",442,386,False
+en-US,mms,gender,unknown,0.1809,"[0.1627, 0.2009]",382,335,False
+es-ES,elevenlabs,target length,10-12,0.0214,"[0.0166, 0.0261]",450,286,False
+es-ES,elevenlabs,target length,13-16,0.0243,"[0.0178, 0.0327]",375,244,False
+es-ES,elevenlabs,target length,3-5,0.0593,"[0.0371, 0.0835]",225,172,False
+es-ES,elevenlabs,target length,6-9,0.0298,"[0.0216, 0.0398]",449,295,False
+es-ES,elevenlabs,gender,female,0.035,"[0.0275, 0.0430]",569,362,False
+es-ES,elevenlabs,gender,male,0.0223,"[0.0183, 0.0266]",815,433,False
+es-ES,elevenlabs,gender,unknown,0.0183,"[0.0090, 0.0292]",115,102,False
+es-ES,whisper,target length,10-12,0.0371,"[0.0301, 0.0449]",450,286,False
+es-ES,whisper,target length,13-16,0.0443,"[0.0359, 0.0537]",375,244,False
+es-ES,whisper,target length,3-5,0.0858,"[0.0615, 0.1105]",225,172,False
+es-ES,whisper,target length,6-9,0.0472,"[0.0372, 0.0579]",449,295,False
+es-ES,whisper,gender,female,0.0509,"[0.0416, 0.0602]",569,362,False
+es-ES,whisper,gender,male,0.0419,"[0.0360, 0.0482]",815,433,False
+es-ES,whisper,gender,unknown,0.0403,"[0.0253, 0.0576]",115,102,False
+es-ES,mms,target length,10-12,0.1219,"[0.1069, 0.1369]",450,286,False
+es-ES,mms,target length,13-16,0.1196,"[0.1052, 0.1341]",375,244,False
+es-ES,mms,target length,3-5,0.1864,"[0.1473, 0.2237]",225,172,False
+es-ES,mms,target length,6-9,0.1198,"[0.1034, 0.1381]",449,295,False
+es-ES,mms,gender,female,0.1373,"[0.1220, 0.1513]",569,362,False
+es-ES,mms,gender,male,0.1154,"[0.1040, 0.1272]",815,433,False
+es-ES,mms,gender,unknown,0.1282,"[0.0998, 0.1570]",115,102,False
+es-MX,elevenlabs,target length,10-12,0.0393,"[0.0314, 0.0485]",450,301,False
+es-MX,elevenlabs,target length,13-16,0.0262,"[0.0197, 0.0336]",375,276,False
+es-MX,elevenlabs,target length,3-5,0.0575,"[0.0361, 0.0825]",225,174,False
+es-MX,elevenlabs,target length,6-9,0.0361,"[0.0264, 0.0477]",450,304,False
+es-MX,elevenlabs,gender,female,0.0375,"[0.0290, 0.0467]",562,376,False
+es-MX,elevenlabs,gender,male,0.0324,"[0.0266, 0.0382]",835,492,False
+es-MX,elevenlabs,gender,unknown,0.0445,"[0.0249, 0.0712]",103,95,False
+es-MX,whisper,target length,10-12,0.0609,"[0.0496, 0.0726]",450,301,False
+es-MX,whisper,target length,13-16,0.0533,"[0.0425, 0.0652]",375,276,False
+es-MX,whisper,target length,3-5,0.0889,"[0.0688, 0.1123]",225,174,False
+es-MX,whisper,target length,6-9,0.0663,"[0.0537, 0.0801]",450,304,False
+es-MX,whisper,gender,female,0.0637,"[0.0530, 0.0763]",562,376,False
+es-MX,whisper,gender,male,0.06,"[0.0509, 0.0699]",835,492,False
+es-MX,whisper,gender,unknown,0.059,"[0.0414, 0.0773]",103,95,False
+es-MX,mms,target length,10-12,0.1443,"[0.1289, 0.1607]",450,301,False
+es-MX,mms,target length,13-16,0.1393,"[0.1212, 0.1591]",375,276,False
+es-MX,mms,target length,3-5,0.2186,"[0.1827, 0.2539]",225,174,False
+es-MX,mms,target length,6-9,0.1476,"[0.1269, 0.1695]",450,304,False
+es-MX,mms,gender,female,0.1526,"[0.1350, 0.1726]",562,376,False
+es-MX,mms,gender,male,0.145,"[0.1305, 0.1592]",835,492,False
+es-MX,mms,gender,unknown,0.1501,"[0.1176, 0.1840]",103,95,False
+nl-NL,elevenlabs,target length,10-12,0.0182,"[0.0122, 0.0250]",450,104,False
+nl-NL,elevenlabs,target length,13-16,0.0128,"[0.0088, 0.0175]",345,82,False
+nl-NL,elevenlabs,target length,17+,0.0051,"[0.0000, 0.0113]",30,28,False
+nl-NL,elevenlabs,target length,3-5,0.017,"[0.0093, 0.0268]",225,83,False
+nl-NL,elevenlabs,target length,6-9,0.0184,"[0.0131, 0.0248]",450,139,False
+nl-NL,elevenlabs,gender,female,0.0128,"[0.0081, 0.0177]",272,92,False
+nl-NL,elevenlabs,gender,male,0.0166,"[0.0129, 0.0202]",994,196,False
+nl-NL,elevenlabs,gender,unknown,0.0169,"[0.0105, 0.0246]",234,91,False
+nl-NL,whisper,target length,10-12,0.0378,"[0.0288, 0.0485]",450,104,False
+nl-NL,whisper,target length,13-16,0.0331,"[0.0259, 0.0409]",345,82,False
+nl-NL,whisper,target length,17+,0.034,"[0.0148, 0.0558]",30,28,False
+nl-NL,whisper,target length,3-5,0.0492,"[0.0332, 0.0665]",225,83,False
+nl-NL,whisper,target length,6-9,0.0443,"[0.0335, 0.0577]",450,139,False
+nl-NL,whisper,gender,female,0.0323,"[0.0238, 0.0420]",272,92,False
+nl-NL,whisper,gender,male,0.0396,"[0.0333, 0.0466]",994,196,False
+nl-NL,whisper,gender,unknown,0.0409,"[0.0296, 0.0543]",234,91,False
+nl-NL,mms,target length,10-12,0.0706,"[0.0568, 0.0867]",450,104,False
+nl-NL,mms,target length,13-16,0.0639,"[0.0538, 0.0760]",345,82,False
+nl-NL,mms,target length,17+,0.1002,"[0.0601, 0.1424]",30,28,False
+nl-NL,mms,target length,3-5,0.1079,"[0.0820, 0.1370]",225,83,False
+nl-NL,mms,target length,6-9,0.0952,"[0.0788, 0.1164]",450,139,False
+nl-NL,mms,gender,female,0.0736,"[0.0591, 0.0904]",272,92,False
+nl-NL,mms,gender,male,0.0777,"[0.0666, 0.0908]",994,196,False
+nl-NL,mms,gender,unknown,0.0844,"[0.0685, 0.1040]",234,91,False
+pt-BR,elevenlabs,target length,10-12,0.0409,"[0.0305, 0.0526]",300,124,False
+pt-BR,elevenlabs,target length,13-16,0.0286,"[0.0184, 0.0409]",150,82,False
+pt-BR,elevenlabs,target length,3-5,0.0801,"[0.0577, 0.1033]",525,143,False
+pt-BR,elevenlabs,target length,6-9,0.0613,"[0.0469, 0.0766]",525,159,False
+pt-BR,elevenlabs,gender,female,0.0456,"[0.0291, 0.0659]",132,78,False
+pt-BR,elevenlabs,gender,male,0.0587,"[0.0470, 0.0712]",774,184,False
+pt-BR,elevenlabs,gender,unknown,0.0476,"[0.0382, 0.0592]",594,161,False
+pt-BR,whisper,target length,10-12,0.0654,"[0.0486, 0.0844]",300,124,False
+pt-BR,whisper,target length,13-16,0.0483,"[0.0340, 0.0656]",150,82,False
+pt-BR,whisper,target length,3-5,0.0941,"[0.0709, 0.1229]",525,143,False
+pt-BR,whisper,target length,6-9,0.0829,"[0.0635, 0.1042]",525,159,False
+pt-BR,whisper,gender,female,0.0525,"[0.0350, 0.0718]",132,78,False
+pt-BR,whisper,gender,male,0.0782,"[0.0623, 0.0955]",774,184,False
+pt-BR,whisper,gender,unknown,0.0728,"[0.0588, 0.0896]",594,161,False
+pt-BR,mms,target length,10-12,0.2129,"[0.1812, 0.2503]",300,124,False
+pt-BR,mms,target length,13-16,0.1802,"[0.1511, 0.2135]",150,82,False
+pt-BR,mms,target length,3-5,0.23,"[0.1932, 0.2728]",525,143,False
+pt-BR,mms,target length,6-9,0.2537,"[0.2165, 0.2935]",525,159,False
+pt-BR,mms,gender,female,0.1962,"[0.1556, 0.2424]",132,78,False
+pt-BR,mms,gender,male,0.2329,"[0.2023, 0.2650]",774,184,False
+pt-BR,mms,gender,unknown,0.2195,"[0.1906, 0.2540]",594,161,False
+ky,elevenlabs,target length,10-12,0.1532,"[0.1030, 0.2233]",70,28,False
+ky,elevenlabs,target length,3-5,0.2367,"[0.1743, 0.3158]",240,41,False
+ky,elevenlabs,target length,6-9,0.1689,"[0.1349, 0.2105]",384,73,False
+ky,elevenlabs,gender,female,0.2089,"[0.1566, 0.2848]",119,32,False
+ky,elevenlabs,gender,male,0.1911,"[0.1457, 0.2430]",274,60,False
+ky,elevenlabs,gender,unknown,0.1649,"[0.1310, 0.2086]",301,52,False
+ky,mms,target length,10-12,0.2241,"[0.1740, 0.2888]",70,28,False
+ky,mms,target length,3-5,0.279,"[0.2374, 0.3289]",240,41,False
+ky,mms,target length,6-9,0.2326,"[0.1980, 0.2772]",384,73,False
+ky,mms,gender,female,0.2675,"[0.2221, 0.3284]",119,32,False
+ky,mms,gender,male,0.2383,"[0.1971, 0.2882]",274,60,False
+ky,mms,gender,unknown,0.2364,"[0.2022, 0.2766]",301,52,False
+ky,gigaam,target length,10-12,0.0823,"[0.0475, 0.1294]",70,28,False
+ky,gigaam,target length,3-5,0.1647,"[0.1255, 0.2175]",240,41,False
+ky,gigaam,target length,6-9,0.0784,"[0.0563, 0.1075]",384,73,False
+ky,gigaam,gender,female,0.1261,"[0.0803, 0.1876]",119,32,False
+ky,gigaam,gender,male,0.0977,"[0.0732, 0.1278]",274,60,False
+ky,gigaam,gender,unknown,0.0913,"[0.0634, 0.1277]",301,52,False

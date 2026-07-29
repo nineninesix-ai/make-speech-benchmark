@@ -1,0 +1,71 @@
+make-speech-benchmark
+Copyright 2026 nineninesix
+
+This product includes software developed at nineninesix, licensed under the
+Apache License, Version 2.0. See LICENSE.
+
+Three different things in this repository carry three different licences. They
+are listed here because "the benchmark is CC0" is true of the data and false of
+the code, and the distinction matters to anyone redistributing either.
+
+--------------------------------------------------------------------------------
+1. The code — Apache-2.0
+--------------------------------------------------------------------------------
+
+Everything under `src/`, `tests/` and `scripts/`, except as noted in (3).
+
+--------------------------------------------------------------------------------
+2. The dataset — CC0-1.0
+--------------------------------------------------------------------------------
+
+The published benchmark (audio, transcripts, metadata, per-utterance metrics):
+
+    https://huggingface.co/datasets/nineninesix/multilingual-speech-benchmark
+
+CC0-1.0, matching its source. The audio is derived from Common Voice 17.0
+(https://commonvoice.mozilla.org), released under CC0-1.0 by Mozilla
+Foundation. No audio is redistributed in this repository.
+
+The generated reports under `reports/` describe that dataset and are CC0-1.0
+with it.
+
+--------------------------------------------------------------------------------
+3. Vendored third-party code — MIT
+--------------------------------------------------------------------------------
+
+    src/msbench/sim/_vendor/ecapa_tdnn.py
+
+Vendored from microsoft/UniSpeech
+(downstreams/speaker_verification/models/ecapa_tdnn.py), MIT licensed,
+Copyright (c) Microsoft Corporation. Parts of it derive in turn from
+https://github.com/lawlict/ECAPA-TDNN.
+
+It is the model definition that the `wavlm_large_finetune.pth` checkpoint was
+trained with — the checkpoint the stock seed-tts-eval scripts use for speaker
+similarity — and is vendored rather than reimplemented so that numbers reported
+under the `wavlm_ft` encoder come from the same architecture as the published
+literature. It carries one documented change from upstream, recorded in the
+file's own header.
+
+--------------------------------------------------------------------------------
+Models and checkpoints
+--------------------------------------------------------------------------------
+
+The pipeline downloads pretrained models at runtime. They are not redistributed
+here and each carries its own licence and terms:
+
+    openai/whisper-large-v3                 Apache-2.0
+    facebook/mms-1b-all                     CC-BY-NC-4.0  (non-commercial)
+    ai-sage/GigaAM-Multilingual             MIT
+    microsoft/wavlm-base-plus-sv            no licence declared on the model card
+    microsoft/UniSpeech wavlm_large_finetune.pth   MIT (the UniSpeech repository)
+    speechbrain/spkrec-ecapa-voxceleb       Apache-2.0
+    ElevenLabs Scribe v2                    commercial API, ElevenLabs terms
+
+Two of these need care rather than a glance:
+
+  * MMS-1B-all is CC-BY-NC-4.0. Reporting its numbers is fine; a commercial
+    pipeline that runs it inherits the non-commercial restriction.
+  * microsoft/wavlm-base-plus-sv declares no licence on its model card. It is
+    the encoder v1 used and is kept for continuity, but `wavlm_ft` and `ecapa`
+    are the encoders this benchmark recommends, and both are clearly licensed.
